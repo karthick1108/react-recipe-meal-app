@@ -17,7 +17,7 @@ const recipe = (props) => {
           </h4>
         </center>
         {props.ingredients.map((ingredient) => (
-          <li>{ingredient.text}</li>
+          <li key={Math.random() * 1456}>{ingredient.text}</li>
         ))}
       </ol>
     </div>
